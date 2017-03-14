@@ -10,7 +10,10 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 /**
- * Created by Administrator on 2017/3/13.
+ * 透明状态栏工具类
+ *
+ * @author leibown
+ *         created at 2017/3/14 11:08
  */
 
 public class TransparentActionBarUtils {
@@ -22,7 +25,6 @@ public class TransparentActionBarUtils {
     public static View getTransparentActionBar(Activity activity, int resId, View actionBar) {
         LayoutInflater inflater = activity.getLayoutInflater();
         LinearLayout containerView = (LinearLayout) inflater.inflate(R.layout.activity_base, null);
-
 
         View contentView = inflater.inflate(resId, null);
         LinearLayout.LayoutParams childParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 1);
